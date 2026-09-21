@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chidex | Anatomy & Full-Stack Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0a0a0f;--card:#12121a;--card2:#181825;--accent:#7c5cff;--accent2:#00e5ff;--text:#e9e9f1;--muted:#9aa0b3;--border:#24243a}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+nav{position:fixed;top:0;width:100%;z-index:20;background:rgba(10,10,15,.85);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);padding:14px 6%;display:flex;justify-content:space-between;align-items:center}
+.hero{padding:140px 6% 70px;max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center}
+.badge{background:var(--card2);border:1px solid var(--border);padding:6px 14px;border-radius:100px;font-size:.78rem;color:var(--muted);display:inline-flex;gap:8px;align-items:center;margin-bottom:18px}
+.dot{width:8px;height:8px;background:#00ff88;border-radius:50%}
+.hero h1{font-size:clamp(2.4rem,4.5vw,3.6rem);line-height:.95;font-weight:800;letter-spacing:-.04em}
+.grad{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hero p{color:var(--muted);margin:18px 0 26px;font-size:1.02rem}
+.btn{padding:12px 20px;border-radius:10px;font-weight:600;text-decoration:none;display:inline-flex;gap:8px;font-size:.88rem;margin-right:10px}
+.btn-p{background:var(--accent);color:#fff}
+.btn-g{background:var(--card);border:1px solid var(--border);color:var(--text)}
+/* FIXED - NO MORE HEAD CUT */
+.profile-wrap{background:transparent;border:none;padding:0;position:relative;overflow:hidden;border-radius:20px}
+.profile-wrap img{width:100%;height:auto;object-fit:contain;background:#0a0a0f;border-radius:16px;display:block}
+.profile-wrap .label{position:absolute;bottom:16px;left:16px;background:rgba(10,10,15,.85);backdrop-filter:blur(10px);border:1px solid var(--border);padding:8px 12px;border-radius:10px;font-size:.76rem}
+section{padding:72px 6%;max-width:1200px;margin:0 auto}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(268px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:20px}
+.card:hover{border-color:rgba(124,92,255,.4);transform:translateY(-3px)}
+.tag{display:inline-block;font-size:.71rem;background:var(--card2);border:1px solid var(--border);padding:5px 10px;border-radius:100px;margin:3px;color:var(--muted)}
+footer{border-top:1px solid var(--border);padding:32px 6%;text-align:center;color:var(--muted);font-size:.82rem}
+@media(max-width:900px){.hero{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav><b>CHIDEX<span style="color:#7c5cff">.DEV</span></b><span style="color:var(--muted);font-size:.85rem">Anatomy × Code</span></nav>
+
+<div class="hero">
+<div>
+<div class="badge"><span class="dot"></span> TS Academy Scholar • Anatomy × Code</div>
+<h1>Anatomy Student <br><span class="grad">turning Full-Stack Developer.</span></h1>
+<p>Medical science precision meets modern software engineering. 15 modules — React, Node, MongoDB/PostgreSQL, JWT/RBAC, Docker, CI/CD — building health-tech & EdTech products.</p>
+<a class="btn btn-p" href="#projects">View Projects →</a>
+<a class="btn btn-g" href="https://github.com/ajidechidera2007-wq/portfolio-" target="_blank">GitHub</a>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:30px">
+<div class="card" style="padding:14px"><b>15+</b><br><small style="color:var(--muted)">Modules</small></div>
+<div class="card" style="padding:14px"><b>Full-Stack</b><br><small style="color:var(--muted)">Frontend + Backend</small></div>
+<div class="card" style="padding:14px"><b>Live</b><br><small style="color:var(--muted)">Netlify + GitHub</small></div>
+</div>
+</div>
+
+<div class="profile-wrap">
+<img src="profile.png" alt="Chidex - Anatomy and Developer">
+<div class="label">● Chidex • chidex-websolutions.netlify.app</div>
+</div>
+</div>
+
+<section id="skills">
+<h2>Skills Acquired — TS Academy</h2>
+<p style="color:var(--muted);margin:8px 0 20px">From Software_Development-2.pdf — formatted for recruiters</p>
+<div class="grid">
+<div class="card"><h3>🧱 Foundations</h3><span class="tag">Software Design</span><span class="tag">Architecture</span><span class="tag">SDLC</span><span class="tag">Clean Code</span><span class="tag">Python/JS/Java</span></div>
+<div class="card"><h3>🎨 Frontend</h3><span class="tag">HTML5 Semantic</span><span class="tag">CSS Flex/Grid</span><span class="tag">Responsive</span><span class="tag">Animations</span></div>
+<div class="card"><h3>⚡ React</h3><span class="tag">ES6+ JS</span><span class="tag">Hooks</span><span class="tag">Router</span><span class="tag">TypeScript</span></div>
+<div class="card"><h3>🔧 Backend</h3><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">REST APIs</span><span class="tag">Postman</span></div>
+<div class="card"><h3>🗄️ Database</h3><span class="tag">MongoDB</span><span class="tag">PostgreSQL</span><span class="tag">Schema Design</span><span class="tag">CRUD</span></div>
+<div class="card"><h3>🔐 Auth</h3><span class="tag">JWT</span><span class="tag">Cookies</span><span class="tag">RBAC</span></div>
+<div class="card"><h3>🚀 DevOps</h3><span class="tag">Git/GitHub</span><span class="tag">Netlify</span><span class="tag">Vercel</span><span class="tag">CI/CD</span><span class="tag">Docker</span></div>
+<div class="card"><h3>🧪 Testing</h3><span class="tag">Jest</span><span class="tag">Mocha</span><span class="tag">Capstone App</span></div>
+</div>
+</section>
+
+<section id="projects">
+<h2>Featured Projects</h2>
+<div class="grid" style="margin-top:20px">
+<div class="card"><h3>🧠 Anatomy Visual Platform</h3><p style="color:var(--muted);font-size:.86rem">React + Node + MongoDB, RBAC</p></div>
+<div class="card"><h3>⚕️ Chidex Web Solutions v2</h3><p style="color:var(--muted);font-size:.86rem">Pro dark UI, auto-deploy</p></div>
+<div class="card"><h3>🔐 Auth Boilerplate</h3><p style="color:var(--muted);font-size:.86rem">JWT + RBAC secure</p></div>
+</div>
+</section>
+
+<footer>© 2026 Chidex — Anatomy × Full-Stack • chidex-websolutions.netlify.app</footer>
+</body>
+</html>
